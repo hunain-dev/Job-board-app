@@ -1,0 +1,160 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,body{
+  height: 100%;
+  width: 100%;
+}
+
+::-webkit-scrollbar{
+  width: 0%;
+}
+
+.Home{
+  
+  width: 100%;
+  padding: 0.2vw 1.3vw;
+}
+
+.Header{
+  height: 13vh;
+  width: 100%;
+  padding: 0 1vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+.Header .left{
+  height: 100%;
+  width: 32%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+
+.Header .left h1{
+  font-family: actay;
+  font-weight: 500;
+  font-size: 2vw;
+  cursor: pointer;
+}
+
+
+.Header .left h2{
+  font-family: actay;
+  font-weight: 500;
+  font-size: 1.2vw;
+}
+
+
+.Header .right h2{
+  font-family: actay;
+  font-weight: 500;
+  font-size: 1.2vw;
+}
+
+.SearchList {
+  height: 13vh;
+  margin: 1vw auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* New form styling to make it inline like inputs before */
+.SearchForm {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  gap: 1vw; /* spacing between inputs */
+}
+
+.SearchForm input {
+  width: 35%;
+  padding: 1vw;
+  font-family: actay;
+  font-size: 1.2vw;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+button{
+  padding: 1vw 2vw;
+  background-color: #2557A7;
+  color: aliceblue;
+  border: none;
+  font-family: actay;
+  font-size: 1.1vw;
+  font-weight: 600;
+  border-radius: 2vw;
+  cursor: pointer;
+}
+
+.CardList{
+  width: 83%;
+  padding: 0 1vw;
+  margin: 3vw auto;
+  
+}
+
+
+.CardListtop h2{
+  font-family: actay;
+  font-size: 1.7vw;
+  font-weight: 500;
+  line-height: 4vw;
+}
+
+.CardListtop h4{
+  font-family: actay;
+  font-size: 1.2vw;
+  font-weight: 500;
+}
+
+.CardListbottom{
+  height: 100%;
+  width: 100%;
+  margin-top: 2vw;
+  margin: 2vw 0;
+}
+
+.Cards{
+  height: 22vh;
+  width: 50%;
+  border-radius: 1vw;
+  margin: 4vw 0;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  padding: 1vw 1vw;
+  cursor: pointer;
+}
+.Cards:hover{
+   border: 1px solid #4071c0 ;
+   
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    
+  padding: 1vw 1vw;
+}
+.Cards h2{
+  font-family: actay;
+  font-size: 1.4vw;
+  font-weight: 500;
+  margin-bottom: 2.4vw;
+  text-decoration: underline black;
+
+}
+
+
+.Cards h4{
+  font-family: actay;
+  font-size: 1.2vw;
+  font-weight: 400;
+  margin: 0.3vw 0;
+}
