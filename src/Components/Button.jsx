@@ -1,12 +1,18 @@
-import React from 'react'
+import React from 'react';
 
-const Button = () => {
+const Button = ({ btn, backgroundColor, color, Link }) => {
   return (
-    <div>
-        <button>Find-Jobs</button>
-      
-    </div>
-  )
-}
+    <a
+      href={Link}
+      target="_blank"
+      rel="noopener noreferrer"
+      style={{ textDecoration: 'none' }}
+    >
+      <button style={{ backgroundColor, color }}>
+        {btn}
+      </button>
+    </a>
+  );
+};
 
-export default Button
+export default Button;

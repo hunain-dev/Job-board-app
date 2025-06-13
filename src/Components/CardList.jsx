@@ -1,8 +1,11 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 import SearchList from "./SearchList";
+import { useNavigate } from "react-router-dom";
 
 const CardList = () => {
+  const Navigate = useNavigate();
+
   const [Showdata, setShowdata] = useState([]);
   const [filteredJobs, setfilteredJobs] = useState([]);
   const Api_Url = "https://www.arbeitnow.com/api/job-board-api";
@@ -24,11 +27,13 @@ const CardList = () => {
     }
   };
 
-  const handleFilter = (area, keyword) => {
+  const handleFilter = (tittle, Location) => {
     const filtered = Showdata.filter((job) => {
       return (
-       (area === "" || job.location.toLowerCase().includes(area.toLowerCase())) &&
-  (keyword === "" || job.title.toLowerCase().includes(keyword.toLowerCase()))
+        (tittle === "" ||
+          job.title?.toLowerCase().includes(tittle.toLowerCase())) &&
+        (Location === "" ||
+          job.location?.toLowerCase().includes(Location.toLowerCase()))
       );
     });
     setfilteredJobs(filtered);
@@ -46,7 +51,11 @@ const CardList = () => {
         <div className="CardListbottom">
           {filteredJobs.length > 0 ? (
             filteredJobs.map((elem, index) => (
-              <div key={index} className="Cards">
+              <div
+                key={index}
+                className="Cards"
+                onClick={() => Navigate(`/job/${index}`, {state:{job:elem}})}
+              >
                 <h2>{elem.title}</h2>
                 <h4>{elem.company_name}</h4>
                 <h4>{elem.location}</h4>

@@ -9,55 +9,57 @@ html,body{
   width: 100%;
 }
 
-::-webkit-scrollbar{
-  width: 0%;
-}
-
 .Home{
   
   width: 100%;
   padding: 0.2vw 1.3vw;
 }
 
-.Header{
+.Header {
   height: 13vh;
   width: 100%;
+  cursor: pointer;
   padding: 0 1vw;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-
-.Header .left{
+.Header .left {
   height: 100%;
-  width: 32%;
   display: flex;
   align-items: center;
   justify-content: space-around;
+  gap: 3vw;
 }
 
-
-.Header .left h1{
+.Header .left h1 {
   font-family: actay;
   font-weight: 500;
   font-size: 2vw;
   cursor: pointer;
 }
 
-
-.Header .left h2{
+.Header .left h2,
+.Header .right h2 {
   font-family: actay;
   font-weight: 500;
   font-size: 1.2vw;
+  color: black;
+  text-decoration: none;
 }
 
-
-.Header .right h2{
-  font-family: actay;
-  font-weight: 500;
-  font-size: 1.2vw;
+.Header a {
+  text-decoration: none;
+  color: inherit;
 }
+
+.Header .right {
+  display: flex;
+  align-items: center;
+  gap: 1.5vw;
+}
+
 
 .SearchList {
   height: 13vh;
@@ -93,8 +95,8 @@ button{
   border: none;
   font-family: actay;
   font-size: 1.1vw;
-  font-weight: 600;
-  border-radius: 2vw;
+  font-weight: 500;
+  border-radius: 1vw;
   cursor: pointer;
 }
 
@@ -124,16 +126,24 @@ button{
   width: 100%;
   margin-top: 2vw;
   margin: 2vw 0;
+
 }
 
+
+p{
+  font-family: actay;
+  font-weight: 500;
+  font-size: 3vw;
+  margin-top: 5vw;
+}
 .Cards{
-  height: 22vh;
   width: 50%;
   border-radius: 1vw;
   margin: 4vw 0;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
   padding: 1vw 1vw;
   cursor: pointer;
+
 }
 .Cards:hover{
    border: 1px solid #4071c0 ;
@@ -157,4 +167,199 @@ button{
   font-size: 1.2vw;
   font-weight: 400;
   margin: 0.3vw 0;
+}
+
+
+.JobDetails{
+  width: 100%;
+}
+
+.Profile{
+  height: 100vh;
+  width: 100%;
+  background-color: rebeccapurple;
+}
+
+.Job-desc{
+  height: 100vh;
+  width: 70%;
+  margin: 5vw auto;
+}
+
+.Job-desc h2{
+ font-size: 2.3vw;
+ font-family: actay;
+ font-weight: 500;
+ margin-bottom: 2vw;
+  color: rgb(36, 36, 36);
+
+}
+
+.Job-desc h4{
+ font-size: 1.4vw;
+ font-family: actay;
+ font-weight: 500;
+  color: rgb(36, 36, 36);
+
+
+}
+
+.Job-desc Button{
+ margin-top: 1.4VW ;
+
+
+}
+
+.Job-desc h5{
+ font-size: 2vw;
+ font-family: actay;
+ font-weight: 400;
+ margin-top: 2vw;
+  color: rgb(36, 36, 36);
+
+
+}
+
+
+
+.Job-desc p{
+ font-size: 1.3vw;
+ font-family: actay;
+ font-weight: 400;
+ margin-top: 1vw;
+  color: rgb(36, 36, 36);
+
+
+}
+
+.Job-desc h6{
+ font-size: 1.4vw;
+ font-family: actay;
+ font-weight: 400;
+ margin-top: 3vw;
+  color: rgb(36, 36, 36);
+
+
+}
+
+
+
+
+.job-type{
+  display: flex;
+  width: 40%;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 1vw;
+  margin-top: 1vw;
+  margin-bottom: 3vw;
+  color: rgb(36, 36, 36);
+}
+
+.location{
+  margin-bottom: 2.6vw;
+
+  border-top: 1px solid #989694;
+}
+
+.location h6{
+  font-family: actay;
+  font-size: 1.7vw;
+  margin-bottom: 0.7vw;
+}
+
+
+
+.job-desc{
+  margin-bottom: 2.6vw;
+
+  border-top: 1px solid #989694;
+
+}
+.remote-job {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 1vw;
+  border-top: 1px solid #989694;
+  margin-top: 2vw;
+  margin-bottom: 2.6vw;
+  border-radius: 0.5vw;
+}
+
+.remote-job h5 {
+  font-size: 1.7vw;
+  font-weight: 500;
+  color: rgb(36, 36, 36);
+
+}
+
+
+.remote-job h6 {
+  font-size: 1.6vw;
+  font-weight: 500;
+  line-height: 0.3vw;
+  color: rgb(36, 36, 36);
+
+}
+
+.work-location{
+  margin-bottom: 2vw;
+
+}
+
+
+.Topcompanies{
+  width: 75%;
+  margin: 3vw auto;
+}
+
+.Topcompaniesupper{
+  width: 100%;
+  padding: 2vw 2vw;
+}
+.Topcompaniesupper h3{
+   font-family: actay;
+   font-weight: 500;
+   font-size: 3.3vw;
+   margin-bottom: 0.5vw;
+}
+
+.Topcompaniesupper h4{
+   font-family: actay;
+   font-weight: 500;
+   font-size: 1.4vw;
+  color: rgb(36, 36, 36);
+   margin-bottom: 3vw;
+
+}
+.Topcompaniesbottom{
+  width: 100%;
+  padding: 2vw 0;
+}
+
+.Topcompaniesbottom h3{
+   font-family: actay;
+   font-weight: 500;
+   font-size: 2.2vw;
+   
+}
+
+
+
+.popularcompany {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
+  gap: 1.5vw;
+  margin-top: 3vw;
+}
+
+.popularcompaniescard{
+  height: 21vh;
+  width: 94%;
+  border-radius: 1vw;
+  margin: 1vw 1vw;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+
 }

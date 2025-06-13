@@ -1,12 +1,13 @@
-import React, { useState } from "react";
+import { useState } from "react";
+import Button from "./Button";
 
 const SearchList = ({ onFilter }) => {
-  const [area, setArea] = useState("");
-  const [keyword, setKeyword] = useState("");
+  const [title, setTitle] = useState("");       
+  const [Location, setLocation] = useState("");
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    onFilter(area, keyword);
+    onFilter(title, Location);
   };
 
   return (
@@ -15,16 +16,16 @@ const SearchList = ({ onFilter }) => {
         <input
           type="text"
           placeholder="jobs ,tittle, keyword"
-          value={area}
-          onChange={(e) => setArea(e.target.value)}
+          value={title}
+          onChange={(e) => setTitle(e.target.value)}
         />
         <input
           type="text"
           placeholder="city , state"
-          value={keyword}
-          onChange={(e) => setKeyword(e.target.value)}
+          value={Location}
+          onChange={(e) => setLocation(e.target.value)}
         />
-        <button>Search</button>
+        <Button type="submit" btn="Find - jobs" />
       </form>
     </div>
   );
