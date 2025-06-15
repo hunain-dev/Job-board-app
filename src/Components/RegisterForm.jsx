@@ -1,8 +1,9 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import Button from "./Button";
 import { Link, useNavigate } from "react-router-dom";
 
 const RegisterForm = ({ tittle, paragh, type }) => {
+
   const [name, setname] = useState("");
   const [email, setemail] = useState("");
   const [password, setpassword] = useState("");
@@ -30,9 +31,7 @@ const RegisterForm = ({ tittle, paragh, type }) => {
 
       alert("form hass been submited");
       navigate("/LoginForm");
-    }
-    
-    else {
+    } else {
       const storedUser = JSON.parse(localStorage.getItem("user"));
 
       if (!storedUser) {
@@ -46,7 +45,7 @@ const RegisterForm = ({ tittle, paragh, type }) => {
       }
 
       alert("login succescfully");
-      navigate("/Home")
+      navigate("/Home");
     }
   };
   return (
@@ -56,7 +55,7 @@ const RegisterForm = ({ tittle, paragh, type }) => {
         <form onSubmit={formhandler}>
           {type === "register" && (
             <input
-             type="text"
+              type="text"
               placeholder="Enter your name"
               required
               value={name}
@@ -73,8 +72,12 @@ const RegisterForm = ({ tittle, paragh, type }) => {
             onChange={(e) => {
               setemail(e.target.value);
             }}
+
+
           />
-          <input
+
+          <div className="password">
+  <input
             type="password"
             placeholder="Create password"
             required
@@ -94,6 +97,11 @@ const RegisterForm = ({ tittle, paragh, type }) => {
               }}
             />
           )}
+          </div>
+        
+
+
+
           <Button btn={type === "register" ? "Register Now" : "Login"} />
         </form>
         <p>

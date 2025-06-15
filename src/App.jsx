@@ -6,11 +6,12 @@ import Topcompanies from "./Pages/Topcompanies";
 import Registered from "./Pages/Registered/Registered";
 import Login from "./Pages/Login/Login";
 import Layout from "./Components/Layout";
+import Loader from "./Pages/Loader/Loader";
 
 const App = () => {
   return (
     <Routes>
-      <Route path="/" element={<Navigate to="/RegisterForm" />} />
+      <Route path="/" element={<Loader />} />
 
       <Route path="/RegisterForm" element={<Registered />} />
       <Route path="/LoginForm" element={<Login />} />

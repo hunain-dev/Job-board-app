@@ -9,12 +9,33 @@ html,body{
   width: 100%;
 }
 
+@font-face {
+  font-family:BASKE10 ;
+  src: url(./assets/Fonts/BASKE10.ttf);
+}
 .Home{
   
   width: 100%;
   padding: 0.2vw 1.3vw;
 }
 
+
+
+.Loaderpage{
+  height: 100vh;
+width: 100%;
+background-color: #e7e4e1;
+display: flex;
+align-items: center;
+justify-content: center;
+
+}
+.Loaderpage h1{
+ font-family:BASKE10 ;
+ font-weight: 500;
+ font-size: 7vw;
+
+}
 .Header {
   height: 13vh;
   width: 100%;
@@ -88,7 +109,9 @@ html,body{
   border: 1px solid #ccc;
   border-radius: 8px;
 }
-
+.SearchForm input::placeholder {
+  font-size: 1.3vw;
+}
 button{
   padding: 1vw 2vw;
   background-color: #2557A7;
@@ -483,7 +506,9 @@ input[type="password"] {
     font-weight: 500;
     font-size: 1vw;
 }
-
+.password input{
+  font-size: 1.2vw;
+}
 .container p {
   font-family: actay;
   font-weight: 500;
