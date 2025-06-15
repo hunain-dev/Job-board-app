@@ -1,19 +1,26 @@
 import React from "react";
+import { Route, Routes, Navigate } from "react-router-dom";
 import Home from "./Pages/Home";
-import { Route, Routes } from "react-router-dom";
 import JobDetails from "./Components/JobDetails";
-import Profile from "./Components/Profile";
 import Topcompanies from "./Pages/Topcompanies";
+import Registered from "./Pages/Registered/Registered";
+import Login from "./Pages/Login/Login";
+import Layout from "./Components/Layout";
+
 const App = () => {
   return (
-    <div>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/job/:id" element={<JobDetails />} />
-          <Route path="/Profile" element={<Profile />} />
-          <Route path="/Topcompanies" element={<Topcompanies />} />
-        </Routes>
-    </div>
+    <Routes>
+      <Route path="/" element={<Navigate to="/RegisterForm" />} />
+
+      <Route path="/RegisterForm" element={<Registered />} />
+      <Route path="/LoginForm" element={<Login />} />
+
+      <Route element={<Layout />}>
+        <Route path="/Home" element={<Home />} />
+        <Route path="/job/:id" element={<JobDetails />} />
+        <Route path="/Topcompanies" element={<Topcompanies />} />
+      </Route>
+    </Routes>
   );
 };
 

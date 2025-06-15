@@ -66,6 +66,7 @@ html,body{
   margin: 1vw auto;
   display: flex;
   align-items: center;
+  padding: 0 1vw;
   justify-content: center;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
 }
@@ -83,7 +84,7 @@ html,body{
   width: 35%;
   padding: 1vw;
   font-family: actay;
-  font-size: 1.2vw;
+  font-size: 2vw;
   border: 1px solid #ccc;
   border-radius: 8px;
 }
@@ -175,9 +176,10 @@ p{
 }
 
 .Profile{
-  height: 100vh;
   width: 100%;
-  background-color: rebeccapurple;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .Job-desc{
@@ -361,5 +363,146 @@ p{
   border-radius: 1vw;
   margin: 1vw 1vw;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
 
+}
+
+.popularcompaniescardtopsection{
+  width: 100%;
+    display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+
+}
+
+.popularcompaniescardtopsectionleft{
+  width: 30%;
+  padding: 1vw 0;
+
+}
+.popularcompaniescardtopsectionleft img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+
+}
+
+.popularcompaniescardtopsectionright{
+  width: 100%;
+  padding: 1vw 0.4vw;
+
+}
+
+
+.popularcompaniescardtopsectionright h2{
+  font-family: actay;
+  font-weight: 500;
+  font-size: 1.3vw;
+
+}
+
+
+.popularcompaniescardtopsectionright h3{
+  font-weight: 500;
+  font-size: 1.2vw;
+
+  font-family: actay;
+}
+
+.popularcompaniescardtopsectionright h4{
+  font-weight: 500;
+  font-size: 1.1vw;
+
+  font-family: actay;
+}
+
+
+.popularcompaniescardbottomsection {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5vw;
+  padding: 0 1vw;
+  cursor: pointer;
+}
+
+.hiring-role {
+  background-color: #f3f3f3;
+  color: #333;
+  font-size: 0.9vw;
+  padding: 0.4vw 0.8vw;
+  border-radius: 1vw;
+  font-family: actay;
+  font-weight: 500;
+  border: 1px solid #ddd;
+  transition: all ease 1s;
+}
+
+.hiring-role:hover {
+  background-color: #212222;
+  border-color: black;
+  color: #ddd;
+}
+
+
+.Registered{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #F3F2F1;
+}
+
+.container {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 30vw;
+    width: 100%;
+    margin-top: 2vw;
+}
+
+.container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: actay;
+    font-weight: 500;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 1.8vw;
+    margin: 1vw 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: actay;
+    font-weight: 500;
+    font-size: 1vw;
+}
+
+.container p {
+  font-family: actay;
+  font-weight: 500;
+  font-size: 1.3vw;
+    text-align: center;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+    margin: 0 1vw;
+}
+
+
+.Login{
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #F3F2F1;
 }
