@@ -26,7 +26,7 @@ const Loader = () => {
     });
 
     tl.to(".Loaderpage", {
-      y: -800,
+      y: -1200,
       duration: 1,
       ease: "power4.inOut",
       onComplete: () => {
