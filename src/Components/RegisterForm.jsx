@@ -3,7 +3,6 @@ import Button from "./Button";
 import { Link, useNavigate } from "react-router-dom";
 
 const RegisterForm = ({ tittle, paragh, type }) => {
-
   const [name, setname] = useState("");
   const [email, setemail] = useState("");
   const [password, setpassword] = useState("");
@@ -17,6 +16,7 @@ const RegisterForm = ({ tittle, paragh, type }) => {
         alert("Your password at least 8 characters");
         return;
       }
+
       if (password !== Cpassword) {
         alert("Please match your password with Confirm Password");
         return;
@@ -72,35 +72,30 @@ const RegisterForm = ({ tittle, paragh, type }) => {
             onChange={(e) => {
               setemail(e.target.value);
             }}
-
-
           />
 
           <div className="password">
-  <input
-            type="password"
-            placeholder="Create password"
-            required
-            value={password}
-            onChange={(e) => {
-              setpassword(e.target.value);
-            }}
-          />
-          {type === "register" && (
             <input
               type="password"
-              placeholder="Confirm password"
+              placeholder="Create password"
               required
-              value={Cpassword}
+              value={password}
               onChange={(e) => {
-                setCpassword(e.target.value);
+                setpassword(e.target.value);
               }}
             />
-          )}
+            {type === "register" && (
+              <input
+                type="password"
+                placeholder="Confirm password"
+                required
+                value={Cpassword}
+                onChange={(e) => {
+                  setCpassword(e.target.value);
+                }}
+              />
+            )}
           </div>
-        
-
-
 
           <Button btn={type === "register" ? "Register Now" : "Login"} />
         </form>

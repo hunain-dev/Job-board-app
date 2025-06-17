@@ -13,6 +13,18 @@ html,body{
   font-family:BASKE10 ;
   src: url(./assets/Fonts/BASKE10.ttf);
 }
+
+
+@font-face {
+  font-family:Raleway ;
+  src: url(./assets/Fonts/Raleway-Thin.ttf);
+}
+
+
+@font-face {
+  font-family:Raleways ;
+  src: url(./assets/Fonts/Raleway-Light.ttf);
+}
 .Home{
   
   width: 100%;
@@ -55,17 +67,17 @@ justify-content: center;
 }
 
 .Header .left h1 {
-  font-family: actay;
+  font-family: Raleway;
   font-weight: 500;
-  font-size: 2vw;
+  font-size: 2.2vw;
   cursor: pointer;
 }
 
 .Header .left h2,
 .Header .right h2 {
-  font-family: actay;
+  font-family: Raleways;
   font-weight: 500;
-  font-size: 1.2vw;
+  font-size: 1.3vw;
   color: black;
   text-decoration: none;
 }
@@ -83,7 +95,6 @@ justify-content: center;
 
 
 .SearchList {
-  height: 13vh;
   margin: 1vw auto;
   display: flex;
   align-items: center;
@@ -104,7 +115,7 @@ justify-content: center;
 .SearchForm input {
   width: 35%;
   padding: 1vw;
-  font-family: actay;
+  font-family: Raleways;
   font-size: 2vw;
   border: 1px solid #ccc;
   border-radius: 8px;
@@ -117,7 +128,7 @@ button{
   background-color: #2557A7;
   color: aliceblue;
   border: none;
-  font-family: actay;
+  font-family: Raleways;
   font-size: 1.1vw;
   font-weight: 500;
   border-radius: 1vw;
@@ -133,14 +144,14 @@ button{
 
 
 .CardListtop h2{
-  font-family: actay;
+  font-family: Raleways;
   font-size: 1.7vw;
   font-weight: 500;
   line-height: 4vw;
 }
 
 .CardListtop h4{
-  font-family: actay;
+  font-family: Raleways;
   font-size: 1.2vw;
   font-weight: 500;
 }
@@ -155,7 +166,7 @@ button{
 
 
 p{
-  font-family: actay;
+  font-family: Raleways;
   font-weight: 500;
   font-size: 3vw;
   margin-top: 5vw;
@@ -177,17 +188,16 @@ p{
   padding: 1vw 1vw;
 }
 .Cards h2{
-  font-family: actay;
+  font-family: Raleways;
   font-size: 1.4vw;
   font-weight: 500;
   margin-bottom: 2.4vw;
-  text-decoration: underline black;
 
 }
 
 
 .Cards h4{
-  font-family: actay;
+  font-family: Raleways;
   font-size: 1.2vw;
   font-weight: 400;
   margin: 0.3vw 0;
@@ -213,7 +223,7 @@ p{
 
 .Job-desc h2{
  font-size: 2.3vw;
- font-family: actay;
+ font-family: Raleways;
  font-weight: 500;
  margin-bottom: 2vw;
   color: rgb(36, 36, 36);
@@ -222,7 +232,7 @@ p{
 
 .Job-desc h4{
  font-size: 1.4vw;
- font-family: actay;
+ font-family: Raleways;
  font-weight: 500;
   color: rgb(36, 36, 36);
 
@@ -237,7 +247,7 @@ p{
 
 .Job-desc h5{
  font-size: 2vw;
- font-family: actay;
+ font-family: Raleways;
  font-weight: 400;
  margin-top: 2vw;
   color: rgb(36, 36, 36);
@@ -249,7 +259,7 @@ p{
 
 .Job-desc p{
  font-size: 1.3vw;
- font-family: actay;
+ font-family: Raleways;
  font-weight: 400;
  margin-top: 1vw;
   color: rgb(36, 36, 36);
@@ -259,7 +269,7 @@ p{
 
 .Job-desc h6{
  font-size: 1.4vw;
- font-family: actay;
+ font-family: Raleways;
  font-weight: 400;
  margin-top: 3vw;
   color: rgb(36, 36, 36);
@@ -288,7 +298,7 @@ p{
 }
 
 .location h6{
-  font-family: actay;
+  font-family: Raleways;
   font-size: 1.7vw;
   margin-bottom: 0.7vw;
 }
@@ -345,14 +355,14 @@ p{
   padding: 2vw 2vw;
 }
 .Topcompaniesupper h3{
-   font-family: actay;
+   font-family: Raleways;
    font-weight: 500;
    font-size: 3.3vw;
    margin-bottom: 0.5vw;
 }
 
 .Topcompaniesupper h4{
-   font-family: actay;
+   font-family: Raleways  ;
    font-weight: 500;
    font-size: 1.4vw;
   color: rgb(36, 36, 36);
@@ -365,7 +375,7 @@ p{
 }
 
 .Topcompaniesbottom h3{
-   font-family: actay;
+   font-family: Raleways;
    font-weight: 500;
    font-size: 2.2vw;
    
@@ -419,7 +429,7 @@ p{
 
 
 .popularcompaniescardtopsectionright h2{
-  font-family: actay;
+  font-family: Raleways;
   font-weight: 500;
   font-size: 1.3vw;
 
@@ -430,14 +440,14 @@ p{
   font-weight: 500;
   font-size: 1.2vw;
 
-  font-family: actay;
+  font-family: Raleways;
 }
 
 .popularcompaniescardtopsectionright h4{
   font-weight: 500;
   font-size: 1.1vw;
 
-  font-family: actay;
+  font-family: Raleways;
 }
 
 
@@ -468,29 +478,29 @@ p{
   color: #ddd;
 }
 
-
-.Registered{
+.Registered {
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: #F3F2F1;
+  padding: 1vw; /* for spacing on small screens */
+  box-sizing: border-box;
 }
 
 .container {
-    background-color: #ffffff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    max-width: 30vw;
-    width: 100%;
-    margin-top: 2vw;
+  background-color: #ffffff;
+  padding: 2vw;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 30vw; /* instead of vw, use px for consistent sizing */
 }
 
 .container h2 {
     text-align: center;
     margin-bottom: 20px;
-    font-family: actay;
+    font-family: Raleways;
     font-weight: 500;
 }
 
@@ -499,18 +509,19 @@ input[type="email"],
 input[type="password"] {
     width: 100%;
     padding: 1.8vw;
-    margin: 1vw 0;
+    margin: 0.7vw 0;
     border: 1px solid #ccc;
     border-radius: 4px;
-    font-family: actay;
+    font-family: Raleways;
     font-weight: 500;
     font-size: 1vw;
+    margin-bottom: 1vw;
 }
 .password input{
   font-size: 1.2vw;
 }
 .container p {
-  font-family: actay;
+  font-family: Raleways;
   font-weight: 500;
   font-size: 1.3vw;
     text-align: center;
@@ -530,4 +541,202 @@ a {
   align-items: center;
   justify-content: center;
   background-color: #F3F2F1;
+}
+
+
+
+
+
+@media (max-width: 768px) {
+  .Header {
+ opacity: 0;
+}
+
+
+.Loaderpage h1{
+ font-size: 15vw;
+
+}
+
+.Registered {
+  height: 100vh;
+
+}
+
+
+.container {
+  padding: 10vw;
+  max-width: 90vw; /* instead of vw, use px for consistent sizing */
+}
+
+.container h2 {
+
+    font-size: 8vw;
+}
+
+
+input[type="text"],
+input[type="email"],
+input[type="password"] 
+{
+    padding: 6vw;
+    margin: 1vw 0;
+    font-size: 4.2vw;
+    margin-bottom: 7vw;
+}
+button{
+  padding: 3vw 4vw;
+  font-size: 4vw;
+
+}
+
+
+.Login{
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #F3F2F1;
+}
+
+.SearchList {
+  padding: 0 3vw;
+}
+.SearchForm {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 0.1vw;
+  padding: 3vw 0;
+  
+}
+.SearchForm input {
+  width: 100%;
+  padding: 3vw;
+  border: none;
+}
+.SearchForm input::placeholder {
+  font-size: 5vw;
+}
+
+.searchlistbtn{
+  width: 100%;
+}
+
+.CardList{
+  width: 100%;
+  margin: 13vw auto;
+
+  
+}
+.CardListtop h2{
+  font-size: 8vw;
+  line-height: 12vw;
+}
+.CardListtop h4{
+  font-size: 3.8vw;
+}
+.CardListbottom{
+  height: 100%;
+  width: 100%;
+  margin-top: 2vw;
+  margin: 2vw 0;
+
+}
+.Cards{
+  width: 100%;
+  margin: 4vw 0;
+  padding: 7vw 1vw;
+
+}
+
+.Cards h2{
+  font-size: 5vw;
+  margin-bottom: 2vw;
+
+}
+
+.Cards h4{
+  font-size: 3.7vw;
+  margin: 1vw 0;
+}
+
+
+.JobDetails{
+  width: 100%;
+}
+.Job-desc{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  margin: 15vw auto;
+
+}
+
+.Job-desc h2{
+ font-size: 5.5vw;
+ font-weight: 500;
+ text-align: center;
+ margin-bottom: 5vw;
+
+}
+
+.Job-desc h4{
+ font-size: 3.5vw;
+ margin-bottom: 3vw;
+
+
+}
+.Job-desc Button{
+ margin-top: 3VW ;
+
+
+}
+.Job-desc h5{
+ font-size: 7vw;
+ margin-top: 6vw;
+
+
+}
+
+.Job-desc p{
+ font-size:3.5vw;
+ margin-top: 2vw;
+
+
+}
+
+.Job-desc h6{
+ font-size: 5vw;
+ margin-top: 5vw;
+
+
+}
+.job-type{
+  width: 60%;
+  gap: 2vw;
+  margin-top: 4vw;
+  margin-bottom: 6vw;
+}
+
+.location{
+  margin-bottom: 4vw;
+
+}
+.location h6{
+  font-size: 6vw;
+  text-align: center;
+  margin-bottom: 2vw;
+}
+
+
+.job-desc{
+  margin-bottom: 2.6vw;
+  border-top: 1px solid #989694;
+
+}
 }

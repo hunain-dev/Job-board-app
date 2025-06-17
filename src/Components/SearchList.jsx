@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Button from "./Button";
 
 const SearchList = ({ onFilter }) => {
   const [area, setArea] = useState("");
@@ -24,7 +25,10 @@ const SearchList = ({ onFilter }) => {
           value={keyword}
           onChange={(e) => setKeyword(e.target.value)}
         />
-        <button type="submit">Search</button>
+        <div className="searchlistbtn">
+         <Button btn={"submi-now"}/>
+
+        </div>
       </form>
     </div>
   );
