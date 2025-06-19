@@ -1,6 +1,6 @@
-import React from 'react';
+  import React from 'react';
 
-const Button = ({ btn, backgroundColor, color, Link }) => {
+const Button = ({ btn, backgroundColor, color, Link ,onClick }) => {
   return (
     <a
       href={Link}
@@ -8,7 +8,9 @@ const Button = ({ btn, backgroundColor, color, Link }) => {
       rel="noopener noreferrer"
       style={{ textDecoration: 'none' }}
     >
-      <button style={{ backgroundColor, color }}>
+      <button style={{ backgroundColor, color }}
+      onClick={onClick}
+      >
         {btn}
       </button>
     </a>

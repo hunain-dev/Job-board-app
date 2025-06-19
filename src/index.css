@@ -1,57 +1,51 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-html,body{
+html,
+body {
   height: 100%;
   width: 100%;
 }
 
 @font-face {
-  font-family:BASKE10 ;
+  font-family: BASKE10;
   src: url(./assets/Fonts/BASKE10.ttf);
 }
 
-
 @font-face {
-  font-family:Raleway ;
+  font-family: Raleway;
   src: url(./assets/Fonts/Raleway-Thin.ttf);
 }
 
-
 @font-face {
-  font-family:Raleways ;
+  font-family: Raleways;
   src: url(./assets/Fonts/Raleway-Light.ttf);
 }
-.Home{
-  
+.Home {
   width: 100%;
   padding: 0.2vw 1.3vw;
 }
 
-
-
-.Loaderpage{
+.Loaderpage {
   height: 100vh;
-width: 100%;
-background-color: #e7e4e1;
-display: flex;
-align-items: center;
-justify-content: center;
-
+  width: 100%;
+  background-color: #e7e4e1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.Loaderpage h1{
- font-family:BASKE10 ;
- font-weight: 500;
- font-size: 7vw;
-
+.Loaderpage h1 {
+  font-family: BASKE10;
+  font-weight: 500;
+  font-size: 7vw;
 }
 .Header {
   height: 13vh;
   width: 100%;
-  cursor: pointer;
+
   padding: 0 1vw;
   display: flex;
   align-items: center;
@@ -90,42 +84,34 @@ justify-content: center;
 .Header .right {
   display: flex;
   align-items: center;
-  gap: 1.5vw;
 }
 
-  .Header .menuicon {
-   opacity: 0;
-    
-    }
+.Header .menuicon {
+  opacity: 0;
+  font-size: 2vw;
+}
 
-    .sidebar {
-      position: fixed;
-      top: 0;
-      opacity: 1;
-      right: -100%; /* Initially hide the sidebar off-screen */
-      width: 60%;
-      height: 100%;
-      background-color: #333;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      transition: right 0.3s ease-in-out; /* Smooth transition */
-    }
-    .sidebar.open {
-      right: 0; /* When the menu is open, move sidebar into view */
-      opacity: 0;
-    }
+.sidebar {
+  position: fixed;
+  top: 0;
+  opacity: 1;
+  right: -100%; /* Initially hide the sidebar off-screen */
+  width: 60%;
+  height: 100%;
+  background-color: #333;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: right 0.3s ease-in-out; /* Smooth transition */
+}
 
-    .closeicon {
-      position: absolute;
-      top: 10px;
-      right: 10px;
-      font-size: 2rem;
-      color: white;
-      cursor: pointer;
-      opacity: 0;
-    }
+.closeicon {
+  position: absolute;
+  font-size: 2rem;
+  color: rgb(0, 0, 0);
+  opacity: 0;
+}
 .SearchList {
   margin: 1vw auto;
   display: flex;
@@ -155,9 +141,9 @@ justify-content: center;
 .SearchForm input::placeholder {
   font-size: 1.3vw;
 }
-button{
+button {
   padding: 1vw 2vw;
-  background-color: #2557A7;
+  background-color: #2557a7;
   color: aliceblue;
   border: none;
   font-family: Raleways;
@@ -167,152 +153,128 @@ button{
   cursor: pointer;
 }
 
-.CardList{
+.CardList {
   width: 83%;
   padding: 0 1vw;
   margin: 3vw auto;
-  
 }
 
-
-.CardListtop h2{
+.CardListtop h2 {
   font-family: Raleways;
   font-size: 1.7vw;
   font-weight: 500;
   line-height: 4vw;
 }
 
-.CardListtop h4{
+.CardListtop h4 {
   font-family: Raleways;
   font-size: 1.2vw;
   font-weight: 500;
 }
 
-.CardListbottom{
+.CardListbottom {
   height: 100%;
   width: 100%;
   margin-top: 2vw;
   margin: 2vw 0;
-
 }
 
-
-p{
+p {
   font-family: Raleways;
   font-weight: 500;
   font-size: 3vw;
   margin-top: 5vw;
 }
-.Cards{
+.Cards {
   width: 50%;
   border-radius: 1vw;
   margin: 4vw 0;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
   padding: 1vw 1vw;
   cursor: pointer;
-
 }
-.Cards:hover{
-   border: 1px solid #4071c0 ;
-   
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
-    
+.Cards:hover {
+  border: 1px solid #4071c0;
+
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+
   padding: 1vw 1vw;
 }
-.Cards h2{
+.Cards h2 {
   font-family: Raleways;
   font-size: 1.4vw;
   font-weight: 500;
   margin-bottom: 2.4vw;
-
 }
 
-
-.Cards h4{
+.Cards h4 {
   font-family: Raleways;
   font-size: 1.2vw;
   font-weight: 400;
   margin: 0.3vw 0;
 }
 
-
-.JobDetails{
+.JobDetails {
   width: 100%;
 }
 
-.Profile{
+.Profile {
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.Job-desc{
+.Job-desc {
   height: 100vh;
   width: 70%;
   margin: 5vw auto;
 }
 
-.Job-desc h2{
- font-size: 2.3vw;
- font-family: Raleways;
- font-weight: 500;
- margin-bottom: 2vw;
+.Job-desc h2 {
+  font-size: 2.3vw;
+  font-family: Raleways;
+  font-weight: 500;
+  margin-bottom: 2vw;
   color: rgb(36, 36, 36);
-
 }
 
-.Job-desc h4{
- font-size: 1.4vw;
- font-family: Raleways;
- font-weight: 500;
+.Job-desc h4 {
+  font-size: 1.4vw;
+  font-family: Raleways;
+  font-weight: 500;
   color: rgb(36, 36, 36);
-
-
 }
 
-.Job-desc Button{
- margin-top: 1.4VW ;
-
-
+.Job-desc Button {
+  margin-top: 1.4vw;
 }
 
-.Job-desc h5{
- font-size: 2vw;
- font-family: Raleways;
- font-weight: 400;
- margin-top: 2vw;
+.Job-desc h5 {
+  font-size: 2vw;
+  font-family: Raleways;
+  font-weight: 400;
+  margin-top: 2vw;
   color: rgb(36, 36, 36);
-
-
 }
 
-
-
-.Job-desc p{
- font-size: 1.3vw;
- font-family: Raleways;
- font-weight: 400;
- margin-top: 1vw;
+.Job-desc p {
+  font-size: 1.3vw;
+  font-family: Raleways;
+  font-weight: 400;
+  margin-top: 1vw;
   color: rgb(36, 36, 36);
-
-
 }
 
-.Job-desc h6{
- font-size: 1.4vw;
- font-family: Raleways;
- font-weight: 400;
- margin-top: 3vw;
+.Job-desc h6 {
+  font-size: 1.4vw;
+  font-family: Raleways;
+  font-weight: 400;
+  margin-top: 3vw;
   color: rgb(36, 36, 36);
-
-
 }
 
-
-
-
-.job-type{
+.job-type {
   display: flex;
   width: 40%;
   align-items: flex-start;
@@ -323,25 +285,22 @@ p{
   color: rgb(36, 36, 36);
 }
 
-.location{
+.location {
   margin-bottom: 2.6vw;
 
   border-top: 1px solid #989694;
 }
 
-.location h6{
+.location h6 {
   font-family: Raleways;
   font-size: 1.7vw;
   margin-bottom: 0.7vw;
 }
 
-
-
-.job-desc{
+.job-desc {
   margin-bottom: 2.6vw;
 
   border-top: 1px solid #989694;
-
 }
 .remote-job {
   display: flex;
@@ -359,61 +318,52 @@ p{
   font-size: 1.7vw;
   font-weight: 500;
   color: rgb(36, 36, 36);
-
 }
-
 
 .remote-job h6 {
   font-size: 1.6vw;
   font-weight: 500;
   line-height: 0.3vw;
   color: rgb(36, 36, 36);
-
 }
 
-.work-location{
+.work-location {
   margin-bottom: 2vw;
-
 }
 
-
-.Topcompanies{
+.Topcompanies {
   width: 75%;
   margin: 3vw auto;
 }
 
-.Topcompaniesupper{
+.Topcompaniesupper {
   width: 100%;
   padding: 2vw 2vw;
 }
-.Topcompaniesupper h3{
-   font-family: Raleways;
-   font-weight: 500;
-   font-size: 3.3vw;
-   margin-bottom: 0.5vw;
+.Topcompaniesupper h3 {
+  font-family: Raleways;
+  font-weight: 500;
+  font-size: 3.3vw;
+  margin-bottom: 0.5vw;
 }
 
-.Topcompaniesupper h4{
-   font-family: Raleways  ;
-   font-weight: 500;
-   font-size: 1.4vw;
+.Topcompaniesupper h4 {
+  font-family: Raleways;
+  font-weight: 500;
+  font-size: 1.4vw;
   color: rgb(36, 36, 36);
-   margin-bottom: 3vw;
-
+  margin-bottom: 3vw;
 }
-.Topcompaniesbottom{
+.Topcompaniesbottom {
   width: 100%;
   padding: 2vw 0;
 }
 
-.Topcompaniesbottom h3{
-   font-family: Raleways;
-   font-weight: 500;
-   font-size: 2.2vw;
-   
+.Topcompaniesbottom h3 {
+  font-family: Raleways;
+  font-weight: 500;
+  font-size: 2.2vw;
 }
-
-
 
 .popularcompany {
   display: grid;
@@ -422,63 +372,54 @@ p{
   margin-top: 3vw;
 }
 
-.popularcompaniescard{
+.popularcompaniescard {
   width: 94%;
   border-radius: 1vw;
   margin: 1vw 1vw;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
   overflow: hidden;
-
 }
 
-.popularcompaniescardtopsection{
+.popularcompaniescardtopsection {
   width: 100%;
-    display: flex;
+  display: flex;
   align-items: flex-start;
   justify-content: flex-start;
-
 }
 
-.popularcompaniescardtopsectionleft{
+.popularcompaniescardtopsectionleft {
   width: 30%;
   padding: 1vw 0;
-
 }
-.popularcompaniescardtopsectionleft img{
+.popularcompaniescardtopsectionleft img {
   height: 100%;
   width: 100%;
   object-fit: cover;
   object-position: center;
-
 }
 
-.popularcompaniescardtopsectionright{
+.popularcompaniescardtopsectionright {
   width: 100%;
   padding: 1vw 0.4vw;
-
 }
 
-
-.popularcompaniescardtopsectionright h2{
+.popularcompaniescardtopsectionright h2 {
   font-family: Raleways;
   font-weight: 500;
   font-size: 1.3vw;
-
 }
 
-
-.popularcompaniescardtopsectionright h3{
+.popularcompaniescardtopsectionright h3 {
   font-weight: 500;
   font-size: 1.2vw;
   font-family: Raleways;
 }
 
-.popularcompaniescardtopsectionright h4{
+.popularcompaniescardtopsectionright h4 {
   font-weight: 500;
   font-size: 1.1vw;
   font-family: Raleways;
 }
-
 
 .popularcompaniescardbottomsection {
   width: 100%;
@@ -526,765 +467,735 @@ p{
 }
 
 .container h2 {
-    text-align: center;
-    margin-bottom: 20px;
-    font-family: Raleways;
-    font-weight: 500;
+  text-align: center;
+  margin-bottom: 20px;
+  font-family: Raleways;
+  font-weight: 500;
 }
 
 input[type="text"],
 input[type="email"],
 input[type="password"] {
-    width: 100%;
-    padding: 1.8vw;
-    margin: 0.7vw 0;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    font-family: Raleways;
-    font-weight: 500;
-    font-size: 1vw;
-    margin-bottom: 1vw;
+  width: 100%;
+  padding: 1.8vw;
+  margin: 0.7vw 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-family: Raleways;
+  font-weight: 500;
+  font-size: 1vw;
+  margin-bottom: 1vw;
 }
-.password input{
+.password input {
   font-size: 1.2vw;
 }
 .container p {
   font-family: Raleways;
   font-weight: 500;
   font-size: 1.3vw;
-    text-align: center;
+  text-align: center;
 }
 
 a {
-    color: #007bff;
-    text-decoration: none;
-    margin: 0 1vw;
+  color: #007bff;
+  text-decoration: none;
+  margin: 0 1vw;
 }
 
-
-.Login{
+.Login {
   height: 100vh;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #F3F2F1;
+  background-color: #f3f2f1;
 }
-
-
-
-
 
 @media (max-width: 768px) {
   .Header {
- opacity: 1;
-}
+    opacity: 1;
+  }
 
 
-.Header .left {
-  gap: 3vw;
-}
-
-.Header .left h1 {
-  font-size: 7vw;
-}
+  .Header .left h1 {
+    font-size: 7vw;
+  }
 
 
-      .Header .menuicon {
-        opacity: 1;
-        font-size: 10vw;
-         
-         }
+  .Header .menuicon {
+    opacity: 1;
+    font-size: 7vw;
+    color: #333;
+    font-family: actay;
+  }
+  .Header .right Button {
+    opacity: 0;
 
+  }
 
-         .sidebar {
-  position: fixed;
-  top: 0;
-  right: -100%; /* Initially hide the sidebar off-screen */
-  width: 100%;
-  height:90%;
-  background-color: #181717;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  transition: right 0.3s ease-in-out, opacity 0.3s ease-in-out; 
-  opacity: 0;
-  position: fixed;
-  z-index: 99999;
-}
-.sidebar.open {
-  right: 0; 
-  opacity: 1; 
-}
-.sidebar h3 {
-  color: white;
-  font-size: 2rem;
-  margin: 1rem 0;
-  cursor: pointer;
+  .sidebar {
+    position: fixed;
+    top: 0;
+    right: -100%; /* Initially hide the sidebar off-screen */
+    width: 100%;
+    height: 100%;
+    background-color: #ebe6e6;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: right 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    opacity: 0;
+    position: fixed;
+    z-index: 99999;
+  }
+  .sidebar.open {
+    right: 0;
+    opacity: 1;
+    color: #212222;
+  }
+  .sidebar h3 {
+    color: #212222;
+    font-size: 2rem;
+    margin: 1rem 0;
+    cursor: pointer;
+font-weight: 500;
+    font-family: actay; 
+  }
 
-  font-family: Raleways;
+  .sidebar a {
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+  .closeicon {
+    position: absolute;
+    top: 5vw;
+    right: 4vw;
+    opacity: 1;
+    font-size: 10vw;
+    color: black;
+    cursor: pointer;
+  }
+  .Header .right {
+    display: flex;
+    align-items: center;
+    gap: 1.5vw;
+    opacity: 1;
+  }
 
-}
+  .Header .left h2 {
+    opacity: 0;
+  }
 
-.sidebar a {
-  text-decoration: none;
-  text-transform: uppercase;
-}
-.closeicon {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  font-size: 2rem;
-  color: white;
-  cursor: pointer;
-}
-.Header .right {
-  display: flex;
-  align-items: center;
-  gap: 1.5vw;
-  opacity: 0;
-}
+  
+  .Loaderpage h1 {
+    font-size: 15vw;
+  }
 
-.Header .left h2{
-  opacity: 0;
-}
-.Loaderpage h1{
- font-size: 15vw;
+  .Registered {
+    height: 100vh;
+  }
 
-}
+  .container {
+    padding: 10vw;
+    max-width: 90vw; /* instead of vw, use px for consistent sizing */
+  }
 
-.Registered {
-  height: 100vh;
-
-}
-
-
-.container {
-  padding: 10vw;
-  max-width: 90vw; /* instead of vw, use px for consistent sizing */
-}
-
-.container h2 {
-
+  .container h2 {
     font-size: 8vw;
-}
+  }
 
-
-input[type="text"],
-input[type="email"],
-input[type="password"] 
-{
+  input[type="text"],
+  input[type="email"],
+  input[type="password"] {
     padding: 6vw;
     margin: 1vw 0;
     font-size: 4.2vw;
     margin-bottom: 7vw;
-}
-button{
-  padding: 3vw 4vw;
-  font-size: 4vw;
+  }
+  button {
+    padding: 3vw 4vw;
+    font-size: 4vw;
+  }
 
-}
-
-
-.Login{
-  height: 100vh;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #F3F2F1;
-}
-
-.SearchList {
-  padding: 0 3vw;
-}
-.SearchForm {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: space-around;
-  gap: 0.1vw;
-  padding: 3vw 0;
-  
-}
-.SearchForm input {
-  width: 100%;
-  padding: 3vw;
-  border: none;
-}
-.SearchForm input::placeholder {
-  font-size: 5vw;
-}
-
-.searchlistbtn{
-  width: 100%;
-}
-
-.CardList{
-  width: 100%;
-  margin: 13vw auto;
-
-  
-}
-.CardListtop h2{
-  font-size: 8vw;
-  line-height: 12vw;
-}
-.CardListtop h4{
-  font-size: 3.8vw;
-}
-.CardListbottom{
-  height: 100%;
-  width: 100%;
-  margin-top: 2vw;
-  margin: 2vw 0;
-
-}
-.Cards{
-  width: 100%;
-  margin: 4vw 0;
-  padding: 7vw 1vw;
-  overflow: hidden;
-
-}
-
-.Cards h2{
-  font-size: 3.5vw;
-  margin-bottom: 2vw;
-
-}
-
-.Cards h4{
-  font-size: 3.7vw;
-  margin: 1vw 0;
-}
-
-
-.JobDetails{
-  width: 100%;
-}
-.Job-desc{
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  flex-direction: column;
-  margin: 15vw auto;
-
-}
-
-.Job-desc h2{
- font-size: 5.5vw;
- font-weight: 500;
- text-align: center;
- margin-bottom: 5vw;
-
-}
-
-.Job-desc h4{
- font-size: 3.5vw;
- margin-bottom: 3vw;
-
-
-}
-.Job-desc Button{
- margin-top: 3VW ;
-
-
-}
-.Job-desc h5{
- font-size: 7vw;
- margin-top: 6vw;
-
-
-}
-
-.Job-desc p{
- font-size:3.5vw;
- margin-top: 2vw;
-
-
-}
-
-.Job-desc h6{
- font-size: 5vw;
- margin-top: 5vw;
-
-
-}
-.job-type{
-  width: 60%;
-  gap: 2vw;
-  margin-top: 4vw;
-  margin-bottom: 6vw;
-}
-
-.location{
-  margin-bottom: 4vw;
-
-}
-.location h6{
-  font-size: 6vw;
-  text-align: center;
-  margin-bottom: 2vw;
-}
-
-
-.job-desc{
-  margin-bottom: 2.6vw;
-  border-top: 1px solid #989694;
-
-}
-
-.Topcompanies{
-  width: 100%;
-  margin: 2vw auto;
-}
-.Topcompaniesupper{
-  padding: 2vw 1vw;
-}
-
-.Topcompaniesupper h3{
-   font-size: 6vw;
-   margin-bottom: 3vw;
-}
-
-.Topcompaniesupper h4{
-   font-size: 4vw;
-   margin-bottom: 4vw;
-
-}
-
-.Topcompaniesbottom{
-  width: 100%;
-  padding: 2vw 1vw;
-}
-
-
-.Topcompaniesbottom h3{
-   font-size: 5vw;
-   margin-bottom: 5vw;
-   text-align: center;
-   
-}
-
-.popularcompany {
-
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  gap: 2vw;
-  margin-top: 2vw;
-}
-.popularcompaniescard{
-  margin: 1vw 1vw;
-  padding: 2vw 1vw;
-
-}
-
-.popularcompaniescardtopsection{
-  width: 100%;
+  .Login {
+    height: 100vh;
+    width: 100%;
     display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #f3f2f1;
+  }
 
-}
+  .SearchList {
+    padding: 0 3vw;
+  }
+  .SearchForm {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 0.1vw;
+    padding: 3vw 0;
+  }
+  .SearchForm input {
+    width: 100%;
+    padding: 3vw;
+    border: none;
+  }
+  .SearchForm input::placeholder {
+    font-size: 5vw;
+  }
 
-.popularcompaniescardtopsectionright{
-  padding: 1vw 1vw;
-      display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
+  .searchlistbtn {
+    width: 100%;
+  }
 
-.popularcompaniescardtopsectionright h2{
-  font-size: 4vw;
+  .CardList {
+    width: 100%;
+    margin: 13vw auto;
+  }
+  .CardListtop h2 {
+    font-size: 8vw;
+    line-height: 12vw;
+  }
+  .CardListtop h4 {
+    font-size: 3.8vw;
+  }
+  .CardListbottom {
+    height: 100%;
+    width: 100%;
+    margin-top: 2vw;
+    margin: 2vw 0;
+  }
+  .Cards {
+    width: 100%;
+    margin: 4vw 0;
+    padding: 7vw 1vw;
+    overflow: hidden;
+  }
 
+  .Cards h2 {
+    font-size: 3.5vw;
+    margin-bottom: 2vw;
+  }
 
-}
+  .Cards h4 {
+    font-size: 3.7vw;
+    margin: 1vw 0;
+  }
 
-.popularcompaniescardtopsectionright h3{
-  font-size: 5vw;
+  .JobDetails {
+    width: 100%;
+  }
+  .Job-desc {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    margin: 15vw auto;
+  }
 
-}
-.popularcompaniescardtopsectionright h4{
-  font-size: 5vw;
-  margin-bottom: 3vw;
+  .Job-desc h2 {
+    font-size: 5.5vw;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 5vw;
+  }
 
-}
-.popularcompaniescardbottomsection {
-  gap: 2vw;
-  padding: 0 2vw;
-  display: flex;
-  align-items: center;
-  margin: 1vw 0;
-  justify-content: center;
+  .Job-desc h4 {
+    font-size: 3.5vw;
+    margin-bottom: 3vw;
+  }
+  .Job-desc Button {
+    margin-top: 3vw;
+  }
+  .Job-desc h5 {
+    font-size: 7vw;
+    margin-top: 6vw;
+  }
 
-}
+  .Job-desc p {
+    font-size: 3.5vw;
+    margin-top: 2vw;
+  }
 
-.hiring-role {
-  background-color: #f3f3f3;
-  color: #333;
-  font-size: 2.8vw;
-  padding: 2.5vw 6.5vw;
-  font-family: Raleways;
-}
-.container p {
-  font-size: 4.1vw;
+  .Job-desc h6 {
+    font-size: 5vw;
+    margin-top: 5vw;
+  }
+  .job-type {
+    width: 60%;
+    gap: 2vw;
+    margin-top: 4vw;
+    margin-bottom: 6vw;
+  }
 
-}
-
-}
-
-
-@media (min-width: 768px) and (max-width: 1024px){
-.container p {
-  font-size: 2.9vw;
-
-}
-  .Header {
- opacity: 0;
-}
-
-  .Loaderpage h1{
- font-size: 15vw;
-
-}
-
-.Registered {
-  height: 100vh;
-
-}
-
-
-.container {
-  padding: 2vw;
-  max-width: 80vw; 
-  
-}
-
-.container h2 {
-
+  .location {
+    margin-bottom: 4vw;
+  }
+  .location h6 {
     font-size: 6vw;
-  
+    text-align: center;
+    margin-bottom: 2vw;
+  }
+
+  .job-desc {
+    margin-bottom: 2.6vw;
+    border-top: 1px solid #989694;
+  }
+
+  .Topcompanies {
+    width: 100%;
+    margin: 2vw auto;
+  }
+  .Topcompaniesupper {
+    padding: 2vw 1vw;
+  }
+
+  .Topcompaniesupper h3 {
+    font-size: 6vw;
+    margin-bottom: 3vw;
+  }
+
+  .Topcompaniesupper h4 {
+    font-size: 4vw;
+    margin-bottom: 4vw;
+  }
+
+  .Topcompaniesbottom {
+    width: 100%;
+    padding: 2vw 1vw;
+  }
+
+  .Topcompaniesbottom h3 {
+    font-size: 5vw;
+    margin-bottom: 5vw;
+    text-align: center;
+  }
+
+  .popularcompany {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2vw;
+    margin-top: 2vw;
+  }
+  .popularcompaniescard {
+    margin: 1vw 1vw;
+    padding: 2vw 1vw;
+  }
+
+  .popularcompaniescardtopsection {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .popularcompaniescardtopsectionright {
+    padding: 1vw 1vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .popularcompaniescardtopsectionright h2 {
+    font-size: 4vw;
+  }
+
+  .popularcompaniescardtopsectionright h3 {
+    font-size: 5vw;
+  }
+  .popularcompaniescardtopsectionright h4 {
+    font-size: 5vw;
+    margin-bottom: 3vw;
+  }
+  .popularcompaniescardbottomsection {
+    gap: 2vw;
+    padding: 0 2vw;
+    display: flex;
+    align-items: center;
+    margin: 1vw 0;
+    justify-content: center;
+  }
+
+  .hiring-role {
+    background-color: #f3f3f3;
+    color: #333;
+    font-size: 2.8vw;
+    padding: 2.5vw 6.5vw;
+    font-family: Raleways;
+  }
+  .container p {
+    font-size: 4.1vw;
+  }
 }
 
+@media (min-width: 768px) and (max-width: 1024px) {
+  .container p {
+    font-size: 2.9vw;
+  }
+.Header {
+    opacity: 1;
+  }
 
-input[type="text"],
-input[type="email"],
-input[type="password"] 
-{
+
+  .Header .left h1 {
+    font-size: 7vw;
+  }
+
+
+  .Header .menuicon {
+    opacity: 1;
+    font-size: 6vw;
+    color: #333;
+    font-family: actay;
+  }
+  .Header .right Button {
+    opacity: 0;
+
+  }
+
+  .sidebar {
+    position: fixed;
+    top: 0;
+    right: -100%; /* Initially hide the sidebar off-screen */
+    width: 100%;
+    height: 100%;
+    background-color: #ebe6e6;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: right 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    opacity: 0;
+    position: fixed;
+    z-index: 99999;
+  }
+  .sidebar.open {
+    right: 0;
+    opacity: 1;
+    color: #212222;
+  }
+  .sidebar h3 {
+    color: #212222;
+    font-size: 3.9rem;
+    margin: 1rem 0;
+    cursor: pointer;
+font-weight: 500;
+    font-family: actay; 
+  }
+
+  .sidebar a {
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+  .closeicon {
+    position: absolute;
+    top: 5vw;
+    right: 4vw;
+    opacity: 1;
+    font-size: 10vw;
+    color: black;
+    cursor: pointer;
+  }
+  .Header .right {
+    display: flex;
+    align-items: center;
+    gap: 1.5vw;
+    opacity: 1;
+  }
+
+  .Header .left h2 {
+    opacity: 0;
+  }
+
+  .Loaderpage h1 {
+    font-size: 15vw;
+  }
+
+  .Registered {
+    height: 100vh;
+  }
+
+  .container {
+    padding: 2vw;
+    max-width: 80vw;
+  }
+
+  .container h2 {
+    font-size: 6vw;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="password"] {
     padding: 6vw;
     margin: 1vw 0;
     font-size: 3.3vw;
     margin-bottom: 3vw;
-}
-button{
-  padding: 3vw 4vw;
-  font-size: 3.3vw;
+  }
+  button {
+    padding: 3vw 4vw;
+    font-size: 3.3vw;
+  }
 
-}
-
-
-
-.Login{
-  height: 100vh;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #F3F2F1;
-} 
-
-
-.SearchList {
-  padding: 0 3vw;
-}
-.SearchForm {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: space-around;
-  gap: 1vw;
-  padding: 3vw 0;
-  
-}
-.SearchForm input {
-  width: 100%;
-  padding: 3vw;
-  border: none;
-}
-.SearchForm input::placeholder {
-  font-size: 3.9vw;
-}
-
-.searchlistbtn{
-  width: 100%;
-}
-
-.CardList{
-  width: 100%;
-  margin: 13vw auto;
-
-  
-}
-.CardListtop h2{
-  font-size: 5vw;
-  line-height: 10vw;
-
-}
-.CardListtop h4{
-  font-size: 3vw;
-}
-.CardListbottom{
-  height: 100%;
-  width: 100%;
-  margin-top: 3vw;
-  margin: 2vw 0;
-
-}
-.Cards{
-  width: 100%;
-  margin: 5vw 0;
-  padding: 6vw 2vw;
-
-}
-
-.Cards h2{
-  font-size: 3.2vw;
-  margin-bottom: 3vw;
-
-}
-
-.Cards h4{
-  font-size: 3.8vw;
-  margin: 1vw 0;
-}
-
-
-.JobDetails{
-  width: 100%;
-
-}
-.Job-desc{
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  flex-direction: column;
-  margin: 11vw auto;
-  
-
-}
-
-.Job-desc h2{
- font-size: 3.4vw;
- font-weight: 500;
- text-align: center;
- margin-bottom: 5vw;
-
-}
-
-.Job-desc h4{
- font-size: 3.7vw;
- margin-bottom: 3vw;
-
-
-}
-.Job-desc Button{
- margin-top: 2VW ;
-
-}
-.Job-desc h5{
- font-size: 5vw;
- text-align: center;
- margin-top: 6vw;
-
-
-}
-
-.Job-desc p{
- font-size:3.6vw;
- margin-top: 2vw;
-
-
-}
-
-.Job-desc h6{
- font-size: 4vw;
- margin-top: 4vw;
-
-
-}
-.job-type{
-  width: 60%;
-  gap: 2vw;
-  margin-top: 4vw;
-  margin-bottom: 6vw;
-}
-
-.location{
-  margin-bottom: 4vw;
-
-
-}
-.location h6{
-  font-size: 5vw;
-  text-align: center;
-  margin-bottom: 2vw;
-}
-
-
-.job-desc{
-  margin-bottom: 2.6vw;
-  border-top: 1px solid #989694;
-
-}
-
-.Topcompanies{
-  width: 100%;
-  margin: 2vw auto;
-}
-.Topcompaniesupper{
-  padding: 2vw 1vw;
-}
-
-.Topcompaniesupper h3{
-   font-size: 4vw;
-   margin-bottom: 2vw;
-}
-
-.Topcompaniesupper h4{
-   font-size: 3.4vw;
-
-}
-
-.Topcompaniesbottom{
-  width: 100%;
-  padding: 2vw 1vw;
-}
-
-
-.Topcompaniesbottom h3{
-   font-size: 4.3vw;
-   margin-bottom: 5vw;
-   text-align: center;
-   
-}
-
-.popularcompany {
-
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 2vw;
-  margin-top: 2vw;
-}
-.popularcompaniescard{
-  margin: 1vw 1vw;
-  padding: 3vw 1vw;
-
-}
-
-.popularcompaniescardtopsection{
-  width: 100%;
+  .Login {
+    height: 100vh;
+    width: 100%;
     display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #f3f2f1;
+  }
 
+  .SearchList {
+    padding: 0 3vw;
+  }
+  .SearchForm {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 1vw;
+    padding: 3vw 0;
+  }
+  .SearchForm input {
+    width: 100%;
+    padding: 3vw;
+    border: none;
+  }
+  .SearchForm input::placeholder {
+    font-size: 3.9vw;
+  }
+
+  .searchlistbtn {
+    width: 100%;
+  }
+
+  .CardList {
+    width: 100%;
+    margin: 13vw auto;
+  }
+  .CardListtop h2 {
+    font-size: 5vw;
+    line-height: 10vw;
+  }
+  .CardListtop h4 {
+    font-size: 3vw;
+  }
+  .CardListbottom {
+    height: 100%;
+    width: 100%;
+    margin-top: 3vw;
+    margin: 2vw 0;
+  }
+  .Cards {
+    width: 100%;
+    margin: 5vw 0;
+    padding: 6vw 2vw;
+  }
+
+  .Cards h2 {
+    font-size: 3.2vw;
+    margin-bottom: 3vw;
+  }
+
+  .Cards h4 {
+    font-size: 3.8vw;
+    margin: 1vw 0;
+  }
+
+  .JobDetails {
+    width: 100%;
+  }
+  .Job-desc {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    margin: 11vw auto;
+  }
+
+  .Job-desc h2 {
+    font-size: 3.4vw;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 5vw;
+  }
+
+  .Job-desc h4 {
+    font-size: 3.7vw;
+    margin-bottom: 3vw;
+  }
+  .Job-desc Button {
+    margin-top: 2vw;
+  }
+  .Job-desc h5 {
+    font-size: 5vw;
+    text-align: center;
+    margin-top: 6vw;
+  }
+
+  .Job-desc p {
+    font-size: 3.6vw;
+    margin-top: 2vw;
+  }
+
+  .Job-desc h6 {
+    font-size: 4vw;
+    margin-top: 4vw;
+  }
+  .job-type {
+    width: 60%;
+    gap: 2vw;
+    margin-top: 4vw;
+    margin-bottom: 6vw;
+  }
+
+  .location {
+    margin-bottom: 4vw;
+  }
+  .location h6 {
+    font-size: 5vw;
+    text-align: center;
+    margin-bottom: 2vw;
+  }
+
+  .job-desc {
+    margin-bottom: 2.6vw;
+    border-top: 1px solid #989694;
+  }
+
+  .Topcompanies {
+    width: 100%;
+    margin: 2vw auto;
+  }
+  .Topcompaniesupper {
+    padding: 2vw 1vw;
+  }
+
+  .Topcompaniesupper h3 {
+    font-size: 4vw;
+    margin-bottom: 2vw;
+  }
+
+  .Topcompaniesupper h4 {
+    font-size: 3.4vw;
+  }
+
+  .Topcompaniesbottom {
+    width: 100%;
+    padding: 2vw 1vw;
+  }
+
+  .Topcompaniesbottom h3 {
+    font-size: 4.3vw;
+    margin-bottom: 5vw;
+    text-align: center;
+  }
+
+  .popularcompany {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2vw;
+    margin-top: 2vw;
+  }
+  .popularcompaniescard {
+    margin: 1vw 1vw;
+    padding: 3vw 1vw;
+  }
+
+  .popularcompaniescardtopsection {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .popularcompaniescardtopsectionright {
+    padding: 1vw 1vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .popularcompaniescardtopsectionright h2 {
+    font-size: 4vw;
+  }
+
+  .popularcompaniescardtopsectionright h3 {
+    font-size: 3.5vw;
+  }
+  .popularcompaniescardtopsectionright h4 {
+    font-size: 4vw;
+    margin-bottom: 3vw;
+  }
+  .popularcompaniescardbottomsection {
+    gap: 2vw;
+    margin: 1vw 0;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .hiring-role {
+    background-color: #f3f3f3;
+    color: #333;
+    font-size: 3.3vw;
+    padding: 2vw 5vw;
+    font-family: Raleways;
+  }
 }
 
-.popularcompaniescardtopsectionright{
-  padding: 1vw 1vw;
-      display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
+@media (min-width: 1025px) and (max-width: 1280px) {
+  .Loaderpage h1 {
+    font-size: 9vw;
+  }
 
-.popularcompaniescardtopsectionright h2{
-  font-size: 4vw;
+  .Registered {
+    height: 100vh;
+  }
 
+  .container {
+    padding: 2vw;
+    max-width: 33vw;
+  }
 
-}
-
-.popularcompaniescardtopsectionright h3{
-  font-size: 3.5vw;
-
-}
-.popularcompaniescardtopsectionright h4{
-  font-size: 4vw;
-  margin-bottom: 3vw;
-
-}
-.popularcompaniescardbottomsection {
-  gap: 2vw;
-  margin: 1vw 0;
- display: grid;
-  grid-template-columns: repeat(1, 1fr);
-}
-
-.hiring-role {
-  background-color: #f3f3f3;
-  color: #333;
-  font-size: 3.3vw;
-  padding: 2vw 5vw;
-  font-family: Raleways;
-}
-
-}
-
-
-@media (min-width: 1025px) and (max-width: 1280px){
-.Loaderpage h1{
- font-size: 9vw;
-
-}
-
-.Registered {
-  height: 100vh;
-
-}
-
-
-.container {
-  padding: 2vw;
-  max-width: 33vw; 
-}
-
-.container h2 {
+  .container h2 {
     font-size: 2.3vw;
-}
-input[type="text"],
-input[type="email"],
-input[type="password"] {
+  }
+  input[type="text"],
+  input[type="email"],
+  input[type="password"] {
     padding: 1.7vw;
     margin: 2vw 0;
     font-weight: 500;
     font-size: 1.5vw;
-}
-.password input{
+  }
+  .password input {
     font-size: 1.5vw;
-}
+  }
 
-.container p {
-  font-size: 1.6vw;
-}
-button{
-  padding: 1.6vw 2vw;
-  font-size: 1.5vw;
+  .container p {
+    font-size: 1.6vw;
+  }
+  button {
+    padding: 1.6vw 2vw;
+    font-size: 1.5vw;
+  }
 
-}
-
-.Login{
-  height: 100vh;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #F3F2F1;
-}
-
+  .Login {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f3f2f1;
+  }
 }

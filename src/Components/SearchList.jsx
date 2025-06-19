@@ -26,7 +26,7 @@ const SearchList = ({ onFilter }) => {
           onChange={(e) => setKeyword(e.target.value)}
         />
         <div className="searchlistbtn">
-         <Button btn={"Search me"}/>
+         <Button btn={"Search"}/>
 
         </div>
       </form>
